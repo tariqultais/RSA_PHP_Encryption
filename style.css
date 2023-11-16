@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+  background-size: 600% 600%;
+  animation: gradientBG 10s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: calc(100% - 24px);
+  border: none;
+  border-radius: 6px;
+  background-color: #f3f3f3;
+
+}
+
+input[type="submit"] {
+  background-color: #16a085;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: calc(100% - 24px);
+  border: none;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1abc9c;
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
